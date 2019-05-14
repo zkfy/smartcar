@@ -15,7 +15,6 @@ var (
 	fr1 = rpio.Pin(24) //18
 	frA = rpio.Pin(25) //22
 
-
 	bl0 = rpio.Pin(5) //29
 	bl1 = rpio.Pin(6) //31
 	blA = rpio.Pin(12) //32
@@ -107,6 +106,7 @@ func Forward(t time.Duration) {
 	time.Sleep(t)
 
 }
+
 //FLeft 前进左转
 func FLeft(t time.Duration){
 	flStop()
@@ -124,6 +124,7 @@ func FRight(t time.Duration){
 	brForward()
 	time.Sleep(t)
 }
+
 //Back 后退
 func Back(t time.Duration){
 	flBack()
